@@ -3,64 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capt Saghir - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid #444;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-    h1 {
-      font-size: 2.2rem;
-      margin: 10px 0;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: normal;
-      color: #666;
-      margin-bottom: 20px;
-    }
-    p {
-      max-width: 500px;
-      line-height: 1.5;
-      font-size: 1rem;
-      color: #555;
-    }
-    footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <title>Syed Saghir Hassan - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <img src="profile.jpg" alt="Profile Photo">
-  <h1>Capt Saghir</h1>
-  <h2>Cybersecurity Enthusiast | Ex-Pak Army Officer</h2>
-  <p>
-    Retired Captain from the Pakistan Army with a background in counterintelligence and computer science. 
-    Transitioning into cybersecurity with certifications (IBM Cybersecurity Analyst, CompTIA Security+) and 
-    preparing for a career in Germany.
-  </p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+      <h1>Syed Saghir Hassan</h1>
+      <h2>Cybersecurity Analyst | Ex-Pak Army Officer</h2>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a retired Captain from the Pakistan Army with 6 years of counterintelligence experience. 
+        With a Computer Science background and certifications in cybersecurity, I am transitioning 
+        into a career in Cybersecurity. Currently focused on IBM Cybersecurity Analyst and CompTIA Security+.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class='bx bx-certification'></i><span>IBM Cybersecurity Analyst</span></div>
+        <div class="skill"><i class='bx bx-certification'></i><span>CompTIA Security+</span></div>
+        <div class="skill"><i class='bx bx-shield'></i><span>Counterintelligence</span></div>
+        <div class="skill"><i class='bx bx-network-chart'></i><span>SIEM</span></div>
+        <div class="skill"><i class='bx bx-pulse'></i><span>Wireshark</span></div>
+        <div class="skill"><i class='bx bx-analyse'></i><span>Splunk</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>Placeholder project description (e.g., SOC Lab or Threat Analysis).</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Placeholder project description (e.g., Splunk Dashboard or Wireshark Investigation).</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>Placeholder project description (e.g., CompTIA Security+ Lab).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    © 2025 Capt Saghir
+    <p>© 2025 Syed Saghir Hassan</p>
   </footer>
 </body>
 </html>
