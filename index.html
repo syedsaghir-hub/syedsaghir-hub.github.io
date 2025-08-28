@@ -1,207 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Syed Saghir | Cybersecurity & IT Admin</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #1e3a8a;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.7rem 1.5rem;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #1e3a8a;
-    }
-    footer {
-      background: #f1f1f1;
-      padding: 2rem 1rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .social-icons a {
-      color: #2563eb;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      transition: 0.3s;
-    }
-    .social-icons a:hover {
-      color: #1e3a8a;
-    }
-  </style>
-</head>
-<body>
-  <!-- Home -->
-  <header>
-    <img src="profile.jpg" alt="Profile Picture">
-    <h1>Cybersecurity and IT Admin | (Retired Pakistan Army Officer)</h1>
-    <p>
-      I help organizations secure, manage, and optimize their IT infrastructure. With a background in counterintelligence, cloud administration, and cybersecurity, I bring discipline and technical expertise to IT operations.
-    </p>
-    <p style="margin-top: 1.5rem;">
-      <a href="#resume" class="btn">Download Resume</a>
-    </p>
-  </header>
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I started my journey with a BS in Computer Science, led a startup in game development for special children, and then served six years in the Pakistan Army in counterintelligence. Today, I combine my leadership, security mindset, and IT expertise to excel in Cybersecurity and IT Administration.
-    </p>
-  </section>
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Home Section */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Syed Saghir Hassan | Cybersecurity and IT Admin | (Retired Pakistan Army Officer)
+        </h1>
+        <p className="text-lg md:text-xl max-w-3xl mx-auto">
+          I help organizations secure, manage, and optimize their IT infrastructure. With a background in counterintelligence, cloud administration, and cybersecurity, I bring discipline and technical expertise to IT operations.
+        </p>
+        <div className="mt-6">
+          <Button className="rounded-2xl shadow-lg" asChild>
+            <a href="#resume">Download Resume</a>
+          </Button>
+        </div>
+      </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="card">
-        <h3><i class="fa-solid fa-cloud"></i> Cloud & Infrastructure</h3>
-        <ul>
-          <li>AWS (EC2, VPC, Route 53, Load Balancers, EBS, Snapshots)</li>
-          <li>SaaS Systems Administration</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-users"></i> Systems & User Management</h3>
-        <ul>
-          <li>Microsoft 365 Administration</li>
-          <li>Windows Active Directory (Users, Groups, GPOs)</li>
-          <li>VPN & Remote Access</li>
-          <li>Basic SQL Server (MSSQL)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-shield-halved"></i> Security & Networking</h3>
-        <ul>
-          <li>Firewalls (SonicWall, UTM)</li>
-          <li>Endpoint Protection (Trend Micro)</li>
-          <li>Patch Management</li>
-          <li>Backup & Disaster Recovery (Backup Exec, Dell SAN)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-gear"></i> Automation & Monitoring</h3>
-        <ul>
-          <li>PowerShell Scripting</li>
-          <li>Task Automation</li>
-          <li>Network Monitoring (Observium, Windows Server Manager)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-diagram-project"></i> Collaboration & Tools</h3>
-        <ul>
-          <li>Jira & Confluence</li>
-          <li>Avaya IP Systems</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><i class="fa-solid fa-lock"></i> Cybersecurity Foundation</h3>
-        <ul>
+      {/* About Section */}
+      <section id="about" className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">About Me</h2>
+        <p className="text-lg leading-relaxed">
+          I started my journey with a BS in Computer Science, led a startup in game
+          development for special children, and then served six years in the Pakistan Army in
+          counterintelligence. Today, I combine my leadership, security mindset, and IT
+          expertise to excel in Cybersecurity and IT Administration.
+        </p>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-16 px-6 bg-white max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">Skills</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Cloud & Infrastructure</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>AWS (EC2, VPC, Route 53, Load Balancers, EBS, Snapshots)</li>
+                <li>SaaS Systems Administration</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Systems & User Management</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Microsoft 365 Administration (Email, Teams, OneDrive, Licensing)</li>
+                <li>Windows Active Directory (User/Group Management, GPOs, Domains)</li>
+                <li>VPN & Remote Access Support</li>
+                <li>Basic SQL Server Administration (MSSQL)</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Security & Networking</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Firewalls (SonicWall, UTM basics)</li>
+                <li>Endpoint Protection (Trend Micro Worry-Free)</li>
+                <li>Patch Management</li>
+                <li>Backup & Disaster Recovery (Backup Exec, Dell SAN)</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Automation & Monitoring</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>PowerShell Scripting</li>
+                <li>Automation of Repetitive IT Tasks</li>
+                <li>Network Monitoring (Observium, Windows Server Manager)</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Collaboration & Tools</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Jira & Confluence</li>
+                <li>Avaya IP Systems</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Cybersecurity Foundation</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>IBM Cybersecurity Analyst Certification</li>
+                <li>CompTIA Security+ (In Progress)</li>
+                <li>Counterintelligence & Security Experience (Pakistan Army)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">Certifications</h2>
+        <ul className="list-disc pl-6 space-y-3 text-lg">
           <li>IBM Cybersecurity Analyst</li>
           <li>CompTIA Security+ (In Progress)</li>
-          <li>Counterintelligence (Pakistan Army)</li>
         </ul>
-      </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16 px-6 bg-white max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">Projects & Labs</h2>
+        <p className="text-lg mb-6">A few technical labs and projects I’ve practiced to build real-world skills:</p>
+        <ul className="list-disc pl-6 space-y-3 text-lg">
+          <li>AWS EC2 Deployment & VPC Configuration</li>
+          <li>Active Directory Setup & User Management</li>
+          <li>Backup & Restore Drill with Dell SAN</li>
+          <li>PowerShell Automation for User Provisioning</li>
+        </ul>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="py-16 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">Resume</h2>
+        <p className="mb-6">Download my latest resume tailored for Cybersecurity and IT Administration roles.</p>
+        <Button className="rounded-2xl shadow-lg" asChild>
+          <a href="/resume.pdf" download>
+            Download Resume
+          </a>
+        </Button>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 px-6 bg-gray-100 text-center">
+        <h2 className="text-3xl font-bold mb-6 text-blue-800">Contact</h2>
+        <p className="text-lg">Let’s connect:</p>
+        <p className="mt-2">Email: rzvsaghir@gmail.com</p>
+        <p className="mt-1">LinkedIn: linkedin.com/in/syed-saghir-hassan</p>
+        <p className="mt-6 text-sm text-gray-600">© 2025 Syed Saghir Hassan</p>
+      </section>
     </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>IBM Cybersecurity Analyst</li>
-      <li>CompTIA Security+ (In Progress)</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects & Labs</h2>
-    <p>A few technical labs and projects I’ve practiced to build real-world skills:</p>
-    <ul>
-      <li>AWS EC2 Deployment & VPC Configuration</li>
-      <li>Active Directory Setup & User Management</li>
-      <li>Backup & Restore Drill with Dell SAN</li>
-      <li>PowerShell Automation for User Provisioning</li>
-    </ul>
-  </section>
-
-  <!-- Resume -->
-  <section id="resume" style="text-align: center;">
-    <h2>Resume</h2>
-    <p>Download my latest resume tailored for Cybersecurity and IT Administration roles.</p>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-  </section>
-
-  <!-- Contact -->
-  <footer id="contact">
-    <h2>Contact</h2>
-    <div class="social-icons">
-      <a href="mailto:syedsaghir@outlook.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://linkedin.com/in/syedsaghir" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/syedsaghir-hub" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <p style="margin-top:1rem;">© 2025 Syed Saghir</p>
-  </footer>
-</body>
-</html>
+  );
+}
