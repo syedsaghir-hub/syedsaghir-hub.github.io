@@ -1,86 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syed Saghir Hassan - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Saghir | Cybersecurity & IT Admin</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #1e3a8a;
+    }
+    footer {
+      background: #f1f1f1;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
-      <h1>Syed Saghir Hassan</h1>
-      <h2>Cybersecurity Analyst | Ex-Pak Army Officer</h2>
-    </div>
+  <!-- Home -->
+  <header>
+    <h1>Cybersecurity and IT Admin | (Retired Pakistan Army Officer)</h1>
+    <p>
+      I help organizations secure, manage, and optimize their IT infrastructure. With a background in counterintelligence, cloud administration, and cybersecurity, I bring discipline and technical expertise to IT operations.
+    </p>
+    <p style="margin-top: 1.5rem;">
+      <a href="#resume" class="btn">Download Resume</a>
+    </p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        With a background in Counterintelligence and Computer Science, I bring analytical and security-focused expertise to the field of cybersecurity.
-		Having served in Pakistan’s Military, I combine operational discipline with technical skills, supported by certifications such as IBM Cybersecurity Analyst and CompTIA Security+.
-		I am currently transitioning into a professional career in cybersecurity, with a focus on threat analysis, incident response, and security operations.	
-	  </p>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I started my journey with a BS in Computer Science, led a startup in game development for special children, and then served six years in the Pakistan Army in counterintelligence. Today, I combine my leadership, security mindset, and IT expertise to excel in Cybersecurity and IT Administration.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <h3>Cloud & Infrastructure</h3>
+      <ul>
+        <li>AWS (EC2, VPC, Route 53, Load Balancers, EBS, Snapshots)</li>
+        <li>SaaS Systems Administration</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Systems & User Management</h3>
+      <ul>
+        <li>Microsoft 365 Administration (Email, Teams, OneDrive, Licensing)</li>
+        <li>Windows Active Directory (User/Group Management, GPOs, Domains)</li>
+        <li>VPN & Remote Access Support</li>
+        <li>Basic SQL Server Administration (MSSQL)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Security & Networking</h3>
+      <ul>
+        <li>Firewalls (SonicWall, UTM basics)</li>
+        <li>Endpoint Protection (Trend Micro Worry-Free)</li>
+        <li>Patch Management</li>
+        <li>Backup & Disaster Recovery (Backup Exec, Dell SAN)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Automation & Monitoring</h3>
+      <ul>
+        <li>PowerShell Scripting</li>
+        <li>Automation of Repetitive IT Tasks</li>
+        <li>Network Monitoring (Observium, Windows Server Manager)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Collaboration & Tools</h3>
+      <ul>
+        <li>Jira & Confluence</li>
+        <li>Avaya IP Systems</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Cybersecurity Foundation</h3>
+      <ul>
+        <li>IBM Cybersecurity Analyst Certification</li>
+        <li>CompTIA Security+ (In Progress)</li>
+        <li>Counterintelligence & Security Experience (Pakistan Army)</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><i class='bx bx-certification'></i><span>IBM Cybersecurity Analyst</span></div>
-        <div class="skill"><i class='bx bx-certification'></i><span>CompTIA Security+</span></div>
-        <div class="skill"><i class='bx bx-shield'></i><span>Counter Intelligence</span></div>
-        <div class="skill"><i class='bx bx-network-chart'></i><span>SIEM</span></div>
-        <div class="skill"><i class='bx bx-pulse'></i><span>Wireshark</span></div>
-        <div class="skill"><i class='bx bx-analyse'></i><span>Splunk</span></div>
-      </div>
-    </div>
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>IBM Cybersecurity Analyst</li>
+      <li>CompTIA Security+ (In Progress)</li>
+    </ul>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>Placeholder project description (e.g., SOC Lab or Threat Analysis).</p>
-        </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>Placeholder project description (e.g., Splunk Dashboard or Wireshark Investigation).</p>
-        </div>
-        <div class="project-card">
-          <h3>Project Three</h3>
-          <p>Placeholder project description (e.g., CompTIA Security+ Lab).</p>
-        </div>
-      </div>
-    </div>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects & Labs</h2>
+    <p>A few technical labs and projects I’ve practiced to build real-world skills:</p>
+    <ul>
+      <li>AWS EC2 Deployment & VPC Configuration</li>
+      <li>Active Directory Setup & User Management</li>
+      <li>Backup & Restore Drill with Dell SAN</li>
+      <li>PowerShell Automation for User Provisioning</li>
+    </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/xovlzpdr" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-    </div>
+  <!-- Resume -->
+  <section id="resume" style="text-align: center;">
+    <h2>Resume</h2>
+    <p>Download my latest resume tailored for Cybersecurity and IT Administration roles.</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Syed Saghir Hassan</p>
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:syedsaghir@outlook.com">syedsaghir@outlook.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/syedsaghir" target="_blank">linkedin.com/in/syedsaghir</a></p>
   </footer>
 </body>
 </html>
